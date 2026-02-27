@@ -8,7 +8,7 @@ function App() {
     setCounter(counter + 1);
   };
   const removeValue = () => {
-    setCounter(counter - 1);
+    setCounter(counter > 0 ? counter - 1 : counter);
   };
   return (
     <>
